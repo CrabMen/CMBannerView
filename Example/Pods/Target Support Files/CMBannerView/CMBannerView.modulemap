@@ -1,0 +1,6 @@
+framework module CMBannerView {
+  umbrella header "CMBannerView-umbrella.h"
+
+  export *
+  module * { export * }
+}

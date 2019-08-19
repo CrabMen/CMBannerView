@@ -2,7 +2,7 @@
 //  main.m
 //  CMBannerView
 //
-//  Created by CrabMen on 07/18/2019.
+//  Created by CrabMen on 08/19/2019.
 //  Copyright (c) 2019 CrabMen. All rights reserved.
 //
 

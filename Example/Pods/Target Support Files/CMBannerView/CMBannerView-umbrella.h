@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "CMBannerView.h"
+#import "CMBannerViewConfig.h"
 
 FOUNDATION_EXPORT double CMBannerViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char CMBannerViewVersionString[];

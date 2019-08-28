@@ -21,7 +21,7 @@
     CMBannerView *banner = [[CMBannerView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 200)];
     
     CMBannerViewConfig *config = [CMBannerViewConfig defaultConfig];
-    
+    config.cm_localImages = @[@"",@"",@"",@"",@"",@"",];
     banner.cm_config = config;
     
     [self.view addSubview:banner];

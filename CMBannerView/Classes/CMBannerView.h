@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CMBannerCollectionCell : UICollectionViewCell
 
+@property (nonatomic,weak) UIImageView *imageView;
+
 @end
 
 

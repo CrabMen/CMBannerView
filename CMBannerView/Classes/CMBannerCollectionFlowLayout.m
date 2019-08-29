@@ -5,36 +5,13 @@
 //  Created by zhijie on 第231天 Aug的第3周.
 //
 
-#import "CMBannerViewConfig.h"
+#import "CMBannerCollectionFlowLayout.h"
 
 @interface CMBannerCollectionFlowLayout ()
 
 @end
 
 @implementation CMBannerCollectionFlowLayout
-
-
-
-@end
-
-
-@interface CMBannerViewConfig ()
-
-@property (nonatomic,strong) CMBannerCollectionFlowLayout *cm_layout;
-
-
-@end
-
-@implementation CMBannerViewConfig
-
-- (CMBannerCollectionFlowLayout *)cm_layout {
-    
-    if (!_cm_layout) {
-        _cm_layout = [CMBannerCollectionFlowLayout new];
-    }
-    return _cm_layout;
-    
-}
 
 + (instancetype)defaultConfig{
     

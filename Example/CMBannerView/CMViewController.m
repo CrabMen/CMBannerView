@@ -19,10 +19,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     CMBannerView *banner = [[CMBannerView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 200)];
-    
-    CMBannerViewConfig *config = [CMBannerViewConfig defaultConfig];
+    CMBannerCollectionFlowLayout *config = [CMBannerCollectionFlowLayout defaultConfig];
     config.cm_localImages = @[@"",@"",@"",@"",@"",@"",];
-    banner.cm_config = config;
+    banner.cm_layout = config;
     
     [self.view addSubview:banner];
 }

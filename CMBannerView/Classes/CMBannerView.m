@@ -37,14 +37,21 @@
     return _timer;
 }
 
+- (CMBannerCollectionFlowLayout *)cm_layout {
+    if (!_cm_layout) {
+        _cm_layout = [CMBannerCollectionFlowLayout defaultConfig];
+    }
+    return _cm_layout;
+}
+
 - (UICollectionView *)collectionView {
     
     if (!_collectionView) {
-        self.cm_config.cm_layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-        self.cm_config.cm_layout.minimumLineSpacing = 0;
-        self.cm_config.cm_layout.minimumInteritemSpacing = 0;
-        self.cm_config.cm_layout.itemSize = self.frame.size;
-        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.cm_config.cm_layout];
+        self.cm_layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+        self.cm_layout.minimumLineSpacing = 0;
+        self.cm_layout.minimumInteritemSpacing = 0;
+        self.cm_layout.itemSize = self.frame.size;
+        UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.cm_layout];
         [collectionView registerClass:CMBannerCollectionCell.class forCellWithReuseIdentifier:NSStringFromClass(CMBannerCollectionCell.class)];
         collectionView.translatesAutoresizingMaskIntoConstraints = NO;
         collectionView.delegate = self;
@@ -53,7 +60,6 @@
         collectionView.showsVerticalScrollIndicator = NO;
         collectionView.backgroundColor = [UIColor clearColor];
         collectionView.pagingEnabled = YES;
-        
         _collectionView = collectionView;
         [self addSubview:_collectionView];
     }
@@ -88,7 +94,7 @@
 - (void)validateConfig {
     
     //校验config内的参数
-    CMPageErrorAssert(self.cm_config.cm_localImages.count || self.cm_config.cm_remoteImages.count,@"图片数组不能为空");
+    CMPageErrorAssert(self.cm_layout.cm_localImages.count || self.cm_layout.cm_remoteImages.count,@"图片数组不能为空");
     
     
 }
@@ -109,14 +115,14 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
-    return self.cm_config.cm_localImages.count *200;
+    return self.cm_layout.cm_localImages.count *200;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     CMBannerCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(CMBannerCollectionCell.class) forIndexPath:indexPath];
     cell.contentView.backgroundColor = CM_RANDOM_COLOR;
-    if (self.cm_config.cm_remoteImages.count) {
+    if (self.cm_layout.cm_remoteImages.count) {
         
     }
     

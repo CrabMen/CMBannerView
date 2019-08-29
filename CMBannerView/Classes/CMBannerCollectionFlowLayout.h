@@ -19,11 +19,6 @@ typedef NS_ENUM(NSInteger,CMBannerViewStyle) {
 
 @interface CMBannerCollectionFlowLayout : UICollectionViewFlowLayout
 
-@end
-
-
-@interface CMBannerViewConfig : NSObject
-
 @property (nonatomic,strong) NSArray <NSString *>*cm_localImages;
 
 @property (nonatomic,strong) NSArray <NSString *>*cm_remoteImages;
@@ -49,7 +44,5 @@ typedef NS_ENUM(NSInteger,CMBannerViewStyle) {
 -(instancetype) mutableCopy __attribute__((unavailable("please call class method +(instancetype)defaultConfig instead")));
 
 @end
-
-
 
 NS_ASSUME_NONNULL_END

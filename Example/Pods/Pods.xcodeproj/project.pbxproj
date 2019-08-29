@@ -12,9 +12,9 @@
 		20B82D23715BCB1DC91783320393930B /* CMBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 703DAB798E00A0B4A9EBA6AB538AEC15 /* CMBannerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26762336E2C692013C9FEFC25A04DD81 /* Pods-CMBannerView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5C421DFF63448C169B35C8A568492B /* Pods-CMBannerView_Example-dummy.m */; };
 		28EBF7153488DCCE6DD0D8072D0130D6 /* Pods-CMBannerView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E6964C02BC4141F37A313723802DEA /* Pods-CMBannerView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A8879D60A7A14A752490F7CB585645E /* CMBannerViewConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD66CC197A0C2D9668D2A6995E43FCF /* CMBannerViewConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A8879D60A7A14A752490F7CB585645E /* CMBannerCollectionFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD66CC197A0C2D9668D2A6995E43FCF /* CMBannerCollectionFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44F189AA205ECA04F6B5D0EAB99A6947 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4E3CB1A976885F6EF664900EE9F2E808 /* CMBannerViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF287B65F368A6AB31CDAFA775CAC55 /* CMBannerViewConfig.m */; };
+		4E3CB1A976885F6EF664900EE9F2E808 /* CMBannerCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF287B65F368A6AB31CDAFA775CAC55 /* CMBannerCollectionFlowLayout.m */; };
 		74231262078A5EFB04FA3987609146D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A31F879104E855586002210CF4773464 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		DEC72A0359C76DC255134864DC8F47CF /* CMBannerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50073C0965267BCEAD236A59448D3C47 /* CMBannerView-dummy.m */; };
@@ -40,32 +40,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BF287B65F368A6AB31CDAFA775CAC55 /* CMBannerViewConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMBannerViewConfig.m; path = CMBannerView/Classes/CMBannerViewConfig.m; sourceTree = "<group>"; };
+		0BF287B65F368A6AB31CDAFA775CAC55 /* CMBannerCollectionFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMBannerCollectionFlowLayout.m; path = CMBannerView/Classes/CMBannerCollectionFlowLayout.m; sourceTree = "<group>"; };
 		23E15FEF7D5121031AA143A145FD490A /* Pods-CMBannerView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMBannerView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2BD66CC197A0C2D9668D2A6995E43FCF /* CMBannerViewConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMBannerViewConfig.h; path = CMBannerView/Classes/CMBannerViewConfig.h; sourceTree = "<group>"; };
+		2BD66CC197A0C2D9668D2A6995E43FCF /* CMBannerCollectionFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMBannerCollectionFlowLayout.h; path = CMBannerView/Classes/CMBannerCollectionFlowLayout.h; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		37FBFB6FF291A24AE62DD9D9E2E20B9C /* Pods-CMBannerView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CMBannerView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3B6B426B9059E2D2EF974F074CBC6444 /* CMBannerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMBannerView-prefix.pch"; sourceTree = "<group>"; };
 		447C131DA63A32850D15DC36EFF51553 /* CMBannerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CMBannerView.xcconfig; sourceTree = "<group>"; };
-		46922F12A007EB0453D75A66AA90176E /* CMBannerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CMBannerView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46E8FEEE434B71287AD6621C5830FED0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		46922F12A007EB0453D75A66AA90176E /* CMBannerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CMBannerView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46E8FEEE434B71287AD6621C5830FED0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		47022CC51C1A39B841566B8345D1202C /* Pods-CMBannerView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMBannerView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		4854A4C62A2D0872DCB3A8A9AE2C4DA6 /* Pods_CMBannerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CMBannerView_Example.framework; path = "Pods-CMBannerView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4854A4C62A2D0872DCB3A8A9AE2C4DA6 /* Pods_CMBannerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMBannerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D24644F38EE9A1ABE2EBB277DB9E091 /* Pods-CMBannerView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CMBannerView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		50073C0965267BCEAD236A59448D3C47 /* CMBannerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CMBannerView-dummy.m"; sourceTree = "<group>"; };
-		559166B36E149D0DD7B3358FA969681E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		559166B36E149D0DD7B3358FA969681E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		59FF6F13481DB47F9ACFA78DB54AA234 /* Pods-CMBannerView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMBannerView_Tests-Info.plist"; sourceTree = "<group>"; };
 		5F527C6902CDED8E25E3F1AD1EB903A9 /* Pods-CMBannerView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CMBannerView_Tests-dummy.m"; sourceTree = "<group>"; };
 		61B3C6A37027CC37F8F0F72BD6153F60 /* Pods-CMBannerView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CMBannerView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		672C61A24374B6B366CE77A4673DA71A /* CMBannerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMBannerView.m; path = CMBannerView/Classes/CMBannerView.m; sourceTree = "<group>"; };
 		703DAB798E00A0B4A9EBA6AB538AEC15 /* CMBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMBannerView.h; path = CMBannerView/Classes/CMBannerView.h; sourceTree = "<group>"; };
-		82B91AE9C9A202367B97BCCF8916DBB2 /* Pods_CMBannerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CMBannerView_Tests.framework; path = "Pods-CMBannerView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82B91AE9C9A202367B97BCCF8916DBB2 /* Pods_CMBannerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMBannerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		864BF0401E5CB55DFEAEC9502A203562 /* Pods-CMBannerView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CMBannerView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		86528606A62BD0F0BA43459407192A85 /* CMBannerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMBannerView-umbrella.h"; sourceTree = "<group>"; };
 		9941A102E681F6C83D82B2B83937B717 /* Pods-CMBannerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMBannerView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E9F4EFA176E7DDD4888C4D10B539C51 /* Pods-CMBannerView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CMBannerView_Example.modulemap"; sourceTree = "<group>"; };
-		AB2EF59C2ED144CA891FBA80129D5DF1 /* CMBannerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CMBannerView.framework; path = CMBannerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2EF59C2ED144CA891FBA80129D5DF1 /* CMBannerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CMBannerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD40756B96C0759372434E7FF3E29EF4 /* Pods-CMBannerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMBannerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B445A6945807ADBC04BA21816A192A2B /* Pods-CMBannerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMBannerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BE5C421DFF63448C169B35C8A568492B /* Pods-CMBannerView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CMBannerView_Example-dummy.m"; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 			children = (
 				703DAB798E00A0B4A9EBA6AB538AEC15 /* CMBannerView.h */,
 				672C61A24374B6B366CE77A4673DA71A /* CMBannerView.m */,
-				2BD66CC197A0C2D9668D2A6995E43FCF /* CMBannerViewConfig.h */,
-				0BF287B65F368A6AB31CDAFA775CAC55 /* CMBannerViewConfig.m */,
+				2BD66CC197A0C2D9668D2A6995E43FCF /* CMBannerCollectionFlowLayout.h */,
+				0BF287B65F368A6AB31CDAFA775CAC55 /* CMBannerCollectionFlowLayout.m */,
 				7BAF625BF80E8F0DEB41FB5EE00B333A /* Pod */,
 				B9B35B545F1072C265C0ED5B09E37B86 /* Support Files */,
 			);
@@ -255,7 +255,7 @@
 			files = (
 				178A269B56EA5CFF14AFB13334763396 /* CMBannerView-umbrella.h in Headers */,
 				20B82D23715BCB1DC91783320393930B /* CMBannerView.h in Headers */,
-				3A8879D60A7A14A752490F7CB585645E /* CMBannerViewConfig.h in Headers */,
+				3A8879D60A7A14A752490F7CB585645E /* CMBannerCollectionFlowLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +377,7 @@
 			files = (
 				DEC72A0359C76DC255134864DC8F47CF /* CMBannerView-dummy.m in Sources */,
 				0E2D8B2BE6C47DB4071ED255BF3F3262 /* CMBannerView.m in Sources */,
-				4E3CB1A976885F6EF664900EE9F2E808 /* CMBannerViewConfig.m in Sources */,
+				4E3CB1A976885F6EF664900EE9F2E808 /* CMBannerCollectionFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,8 +602,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

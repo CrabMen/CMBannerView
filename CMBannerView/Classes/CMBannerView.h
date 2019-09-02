@@ -10,12 +10,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class CMBannerView;
+
+@protocol CMBannerViewDelegate <NSObject>
+- (void)sd_bannerView:(CMBannerView *)bannerView didSelectIndex:(NSInteger)index;
+
+@end
+
 @interface CMBannerView : UIView
 
 @property (nonatomic,strong) CMBannerCollectionFlowLayout *cm_layout;
-
-
 @property (nonatomic,weak,readonly) UICollectionView *collectionView;
+@property (nonatomic,weak) id<CMBannerViewDelegate> delegate;
 
 
 - (void)cm_reloadConfig;
@@ -28,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,weak) UIImageView *imageView;
 
 @end
+
+
 
 
 

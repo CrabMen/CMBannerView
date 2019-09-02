@@ -39,7 +39,7 @@
 
 - (CMBannerCollectionFlowLayout *)cm_layout {
     if (!_cm_layout) {
-        _cm_layout = [CMBannerCollectionFlowLayout defaultConfig];
+        _cm_layout = [CMBannerCollectionFlowLayout defaultLayout];
     }
     return _cm_layout;
 }
@@ -129,15 +129,25 @@
     return cell;
 }
 
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSLog(@"当前点击了第%ld个item",indexPath.item % 200);
+    if (self.delegate && [self.delegate respondsToSelector:@selector(sd_bannerView:didSelectIndex:)]) {
+        [self.delegate sd_bannerView:self didSelectIndex:indexPath.item % 200];
+    }
     
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     NSInteger index = (NSInteger)floor(scrollView.contentOffset.x / self.bounds.size.width) % 200;
     NSLog(@"当前滚动到了第%ld个item",index);
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    
+    
+    
+    
 }
 
 @end

@@ -13,23 +13,18 @@
 
 @implementation CMBannerCollectionFlowLayout
 
-+ (instancetype)defaultConfig{
-    
-    return [[super alloc]initWithDefaultConfig];
-    
++ (instancetype)defaultLayout{
+    return [[super alloc]initWithDefaultLayout];
 }
 
 
-- (instancetype)initWithDefaultConfig {
-
-    
+- (instancetype)initWithDefaultLayout{
     if (self = [super init]) {
         _cm_defaultIndex = 0;
         _cm_autoScroll = YES;
         _cm_cycleScroll = YES;
-        
+        _cm_autoInterval = 3;
     }
-
     return self;
 }
 

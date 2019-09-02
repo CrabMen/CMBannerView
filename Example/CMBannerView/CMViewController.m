@@ -8,7 +8,7 @@
 
 #import "CMViewController.h"
 #import <CMBannerView/CMBannerView.h>
-@interface CMViewController ()
+@interface CMViewController ()<CMBannerViewDelegate>
 
 @end
 
@@ -19,7 +19,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     CMBannerView *banner = [[CMBannerView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 200)];
-    CMBannerCollectionFlowLayout *config = [CMBannerCollectionFlowLayout defaultConfig];
+    banner.delegate = self;
+    CMBannerCollectionFlowLayout *config = [CMBannerCollectionFlowLayout defaultLayout];
     config.cm_localImages = @[@"",@"",@"",@"",@"",@"",];
     banner.cm_layout = config;
     
@@ -30,6 +31,13 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)sd_bannerView:(CMBannerView *)bannerView didSelectIndex:(NSInteger)index {
+    
+    NSLog(@"当前点击了第%ld个item",index);
+
+    
 }
 
 @end

@@ -23,11 +23,9 @@ typedef NS_ENUM(NSInteger,CMBannerViewStyle) {
 
 @property (nonatomic,strong) NSArray <NSString *>*cm_remoteImages;
 
-@property (nonatomic,assign) NSInteger *cm_defaultIndex;
+@property (nonatomic,assign,getter=cm_selectedIndex) NSInteger cm_defaultIndex;
 
 @property (nonatomic,assign) CMBannerViewStyle cm_style;
-
-@property (nonatomic,strong,readonly) CMBannerCollectionFlowLayout *cm_layout;
 
 @property (nonatomic,assign) BOOL cm_autoScroll;
 
@@ -37,11 +35,11 @@ typedef NS_ENUM(NSInteger,CMBannerViewStyle) {
 
 
 
-+ (instancetype)defaultConfig;
-+(instancetype) alloc __attribute__((unavailable("please call class method +(instancetype)defaultConfig instead")));
-+(instancetype) new __attribute__((unavailable("please call class method +(instancetype)defaultConfig instead")));
--(instancetype) copy __attribute__((unavailable("please call class method +(instancetype)defaultConfig instead")));
--(instancetype) mutableCopy __attribute__((unavailable("please call class method +(instancetype)defaultConfig instead")));
++ (instancetype)defaultLayout;
++(instancetype) alloc __attribute__((unavailable("please call class method +(instancetype)defaultLayout instead")));
++(instancetype) new __attribute__((unavailable("please call class method +(instancetype)defaultLayout instead")));
+-(instancetype) copy __attribute__((unavailable("please call class method +(instancetype)defaultLayout instead")));
+-(instancetype) mutableCopy __attribute__((unavailable("please call class method +(instancetype)defaultLayout instead")));
 
 @end
 

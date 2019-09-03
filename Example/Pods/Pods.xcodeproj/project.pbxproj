@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E2D8B2BE6C47DB4071ED255BF3F3262 /* CMBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 672C61A24374B6B366CE77A4673DA71A /* CMBannerView.m */; };
-		178A269B56EA5CFF14AFB13334763396 /* CMBannerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86528606A62BD0F0BA43459407192A85 /* CMBannerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B82D23715BCB1DC91783320393930B /* CMBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 703DAB798E00A0B4A9EBA6AB538AEC15 /* CMBannerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EA428D1CE8D76E610098B50B6DB3314 /* CMBannerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F481EE36E85D868A884C5301B01A19 /* CMBannerView-dummy.m */; };
+		13E551385795F210548E21584A9C458A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1AD428DC620EFA655AFDC7D71CEDCEBB /* CMBannerCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C0949AC66499AA70A6E57C8771A0F2C5 /* CMBannerCollectionFlowLayout.m */; };
 		26762336E2C692013C9FEFC25A04DD81 /* Pods-CMBannerView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5C421DFF63448C169B35C8A568492B /* Pods-CMBannerView_Example-dummy.m */; };
 		28EBF7153488DCCE6DD0D8072D0130D6 /* Pods-CMBannerView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E6964C02BC4141F37A313723802DEA /* Pods-CMBannerView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A8879D60A7A14A752490F7CB585645E /* CMBannerCollectionFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD66CC197A0C2D9668D2A6995E43FCF /* CMBannerCollectionFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3678A45A539D1CE12D0D989B3343B492 /* CMBannerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6873954DA59CE5BEF771AB891E53DF82 /* CMBannerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44F189AA205ECA04F6B5D0EAB99A6947 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		4E3CB1A976885F6EF664900EE9F2E808 /* CMBannerCollectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF287B65F368A6AB31CDAFA775CAC55 /* CMBannerCollectionFlowLayout.m */; };
+		59F77FBA07A813C1AAF7ADAE9F29A564 /* CMBannerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B35BC0968E26B152E50FE94342988B /* CMBannerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74231262078A5EFB04FA3987609146D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		A31F879104E855586002210CF4773464 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		DEC72A0359C76DC255134864DC8F47CF /* CMBannerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50073C0965267BCEAD236A59448D3C47 /* CMBannerView-dummy.m */; };
+		8DCC5B12E97FFCCA559193743E25001B /* CMCollectionFlowLayouts.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A643344629366B272BFCE10B78128F7 /* CMCollectionFlowLayouts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B5B36210D5297F62B5EA1AA29BC1606 /* CMBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D19AB30E425716165D4F77A99E7F6CC /* CMBannerView.m */; };
+		D7874289269BD7300137FC413C526C20 /* CMBannerCollectionFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E5C854A21929859354570E9546C95A6 /* CMBannerCollectionFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F42BD6F021EDFD99FF098FB3DB25C8BD /* Pods-CMBannerView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 864BF0401E5CB55DFEAEC9502A203562 /* Pods-CMBannerView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5E77E4CF00AB0889EE4ADA0B1AD6D30 /* Pods-CMBannerView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F527C6902CDED8E25E3F1AD1EB903A9 /* Pods-CMBannerView_Tests-dummy.m */; };
+		F7F2BBE51477FE5FC9372CAF9A0C194E /* CMCollectionFlowLayouts.m in Sources */ = {isa = PBXBuildFile; fileRef = CC049199DA3ADF6ECF41FCD408BE449B /* CMCollectionFlowLayouts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,49 +42,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BF287B65F368A6AB31CDAFA775CAC55 /* CMBannerCollectionFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMBannerCollectionFlowLayout.m; path = CMBannerView/Classes/CMBannerCollectionFlowLayout.m; sourceTree = "<group>"; };
+		0206AC9E6FC58984CD42E68B2222D6FD /* CMBannerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CMBannerView.modulemap; sourceTree = "<group>"; };
+		05257E1943AB1052076ACBC19E436F6A /* CMBannerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CMBannerView-Info.plist"; sourceTree = "<group>"; };
 		23E15FEF7D5121031AA143A145FD490A /* Pods-CMBannerView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMBannerView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2BD66CC197A0C2D9668D2A6995E43FCF /* CMBannerCollectionFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMBannerCollectionFlowLayout.h; path = CMBannerView/Classes/CMBannerCollectionFlowLayout.h; sourceTree = "<group>"; };
+		315D3B76AEB60EB688C86E95854024CF /* CMBannerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CMBannerView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		37FBFB6FF291A24AE62DD9D9E2E20B9C /* Pods-CMBannerView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CMBannerView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3B6B426B9059E2D2EF974F074CBC6444 /* CMBannerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMBannerView-prefix.pch"; sourceTree = "<group>"; };
-		447C131DA63A32850D15DC36EFF51553 /* CMBannerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CMBannerView.xcconfig; sourceTree = "<group>"; };
-		46922F12A007EB0453D75A66AA90176E /* CMBannerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CMBannerView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		46E8FEEE434B71287AD6621C5830FED0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		47022CC51C1A39B841566B8345D1202C /* Pods-CMBannerView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMBannerView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		4854A4C62A2D0872DCB3A8A9AE2C4DA6 /* Pods_CMBannerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMBannerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4854A4C62A2D0872DCB3A8A9AE2C4DA6 /* Pods_CMBannerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CMBannerView_Example.framework; path = "Pods-CMBannerView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A20CDB5A1246DA1A82DB5F95A8F10E /* CMBannerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CMBannerView.xcconfig; sourceTree = "<group>"; };
 		4D24644F38EE9A1ABE2EBB277DB9E091 /* Pods-CMBannerView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CMBannerView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		50073C0965267BCEAD236A59448D3C47 /* CMBannerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CMBannerView-dummy.m"; sourceTree = "<group>"; };
-		559166B36E149D0DD7B3358FA969681E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		59FF6F13481DB47F9ACFA78DB54AA234 /* Pods-CMBannerView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMBannerView_Tests-Info.plist"; sourceTree = "<group>"; };
 		5F527C6902CDED8E25E3F1AD1EB903A9 /* Pods-CMBannerView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CMBannerView_Tests-dummy.m"; sourceTree = "<group>"; };
 		61B3C6A37027CC37F8F0F72BD6153F60 /* Pods-CMBannerView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CMBannerView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		672C61A24374B6B366CE77A4673DA71A /* CMBannerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMBannerView.m; path = CMBannerView/Classes/CMBannerView.m; sourceTree = "<group>"; };
-		703DAB798E00A0B4A9EBA6AB538AEC15 /* CMBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMBannerView.h; path = CMBannerView/Classes/CMBannerView.h; sourceTree = "<group>"; };
-		82B91AE9C9A202367B97BCCF8916DBB2 /* Pods_CMBannerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMBannerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6873954DA59CE5BEF771AB891E53DF82 /* CMBannerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMBannerView-umbrella.h"; sourceTree = "<group>"; };
+		68FD787E528E8B4BD482FB8BB1A14BE6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		70F481EE36E85D868A884C5301B01A19 /* CMBannerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CMBannerView-dummy.m"; sourceTree = "<group>"; };
+		79B35BC0968E26B152E50FE94342988B /* CMBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMBannerView.h; path = CMBannerView/Classes/CMBannerView.h; sourceTree = "<group>"; };
+		7A643344629366B272BFCE10B78128F7 /* CMCollectionFlowLayouts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMCollectionFlowLayouts.h; path = CMBannerView/Classes/CMCollectionFlowLayouts.h; sourceTree = "<group>"; };
+		7D19AB30E425716165D4F77A99E7F6CC /* CMBannerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMBannerView.m; path = CMBannerView/Classes/CMBannerView.m; sourceTree = "<group>"; };
+		7E5C854A21929859354570E9546C95A6 /* CMBannerCollectionFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CMBannerCollectionFlowLayout.h; path = CMBannerView/Classes/CMBannerCollectionFlowLayout.h; sourceTree = "<group>"; };
+		81E352D30284DE912F4F20835FE34403 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		82B91AE9C9A202367B97BCCF8916DBB2 /* Pods_CMBannerView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CMBannerView_Tests.framework; path = "Pods-CMBannerView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		864BF0401E5CB55DFEAEC9502A203562 /* Pods-CMBannerView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CMBannerView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		86528606A62BD0F0BA43459407192A85 /* CMBannerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMBannerView-umbrella.h"; sourceTree = "<group>"; };
 		9941A102E681F6C83D82B2B83937B717 /* Pods-CMBannerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMBannerView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E9F4EFA176E7DDD4888C4D10B539C51 /* Pods-CMBannerView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CMBannerView_Example.modulemap"; sourceTree = "<group>"; };
-		AB2EF59C2ED144CA891FBA80129D5DF1 /* CMBannerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CMBannerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2EF59C2ED144CA891FBA80129D5DF1 /* CMBannerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CMBannerView.framework; path = CMBannerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD40756B96C0759372434E7FF3E29EF4 /* Pods-CMBannerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMBannerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B445A6945807ADBC04BA21816A192A2B /* Pods-CMBannerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMBannerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BE5C421DFF63448C169B35C8A568492B /* Pods-CMBannerView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CMBannerView_Example-dummy.m"; sourceTree = "<group>"; };
+		C0949AC66499AA70A6E57C8771A0F2C5 /* CMBannerCollectionFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMBannerCollectionFlowLayout.m; path = CMBannerView/Classes/CMBannerCollectionFlowLayout.m; sourceTree = "<group>"; };
 		CA6A538905E22D0F574EC8BBFFDF733F /* Pods-CMBannerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CMBannerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		CC049199DA3ADF6ECF41FCD408BE449B /* CMCollectionFlowLayouts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CMCollectionFlowLayouts.m; path = CMBannerView/Classes/CMCollectionFlowLayouts.m; sourceTree = "<group>"; };
 		D1BDA76BB779B376381B1EA9BD95A19B /* Pods-CMBannerView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CMBannerView_Example-Info.plist"; sourceTree = "<group>"; };
-		D4ABCD34CA15619539031115C3531DD1 /* CMBannerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CMBannerView.modulemap; sourceTree = "<group>"; };
+		E00608D6BB03A5A3267C7A112B453F21 /* CMBannerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CMBannerView-prefix.pch"; sourceTree = "<group>"; };
 		E5E6964C02BC4141F37A313723802DEA /* Pods-CMBannerView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CMBannerView_Example-umbrella.h"; sourceTree = "<group>"; };
-		EA7C7A552908D944753C4B293677038D /* CMBannerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CMBannerView-Info.plist"; sourceTree = "<group>"; };
 		EF2E3F5490DB355FA4CD7F75242B4E02 /* Pods-CMBannerView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CMBannerView_Tests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6541BAFB5B3A1C88F26845519CC86471 /* Frameworks */ = {
+		61496239A6266453BCBA91B6EFDE86AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A31F879104E855586002210CF4773464 /* Foundation.framework in Frameworks */,
+				13E551385795F210548E21584A9C458A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,20 +109,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		147ED5FE2B04C057DD506568414C0C0D /* CMBannerView */ = {
-			isa = PBXGroup;
-			children = (
-				703DAB798E00A0B4A9EBA6AB538AEC15 /* CMBannerView.h */,
-				672C61A24374B6B366CE77A4673DA71A /* CMBannerView.m */,
-				2BD66CC197A0C2D9668D2A6995E43FCF /* CMBannerCollectionFlowLayout.h */,
-				0BF287B65F368A6AB31CDAFA775CAC55 /* CMBannerCollectionFlowLayout.m */,
-				7BAF625BF80E8F0DEB41FB5EE00B333A /* Pod */,
-				B9B35B545F1072C265C0ED5B09E37B86 /* Support Files */,
-			);
-			name = CMBannerView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		1803C65818E96A31E52183114A93E088 /* Pods-CMBannerView_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +123,20 @@
 			);
 			name = "Pods-CMBannerView_Tests";
 			path = "Target Support Files/Pods-CMBannerView_Tests";
+			sourceTree = "<group>";
+		};
+		2585FC081F435272C6C5DD039FCC0753 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0206AC9E6FC58984CD42E68B2222D6FD /* CMBannerView.modulemap */,
+				49A20CDB5A1246DA1A82DB5F95A8F10E /* CMBannerView.xcconfig */,
+				70F481EE36E85D868A884C5301B01A19 /* CMBannerView-dummy.m */,
+				05257E1943AB1052076ACBC19E436F6A /* CMBannerView-Info.plist */,
+				E00608D6BB03A5A3267C7A112B453F21 /* CMBannerView-prefix.pch */,
+				6873954DA59CE5BEF771AB891E53DF82 /* CMBannerView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CMBannerView";
 			sourceTree = "<group>";
 		};
 		694BB42A32884BCAD3D69A1160AC1AB9 /* Pods-CMBannerView_Example */ = {
@@ -162,36 +166,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7BAF625BF80E8F0DEB41FB5EE00B333A /* Pod */ = {
+		B7F371548A34EB7A70F570DD09D80169 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				46922F12A007EB0453D75A66AA90176E /* CMBannerView.podspec */,
-				46E8FEEE434B71287AD6621C5830FED0 /* LICENSE */,
-				559166B36E149D0DD7B3358FA969681E /* README.md */,
+				315D3B76AEB60EB688C86E95854024CF /* CMBannerView.podspec */,
+				81E352D30284DE912F4F20835FE34403 /* LICENSE */,
+				68FD787E528E8B4BD482FB8BB1A14BE6 /* README.md */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		B9B35B545F1072C265C0ED5B09E37B86 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D4ABCD34CA15619539031115C3531DD1 /* CMBannerView.modulemap */,
-				447C131DA63A32850D15DC36EFF51553 /* CMBannerView.xcconfig */,
-				50073C0965267BCEAD236A59448D3C47 /* CMBannerView-dummy.m */,
-				EA7C7A552908D944753C4B293677038D /* CMBannerView-Info.plist */,
-				3B6B426B9059E2D2EF974F074CBC6444 /* CMBannerView-prefix.pch */,
-				86528606A62BD0F0BA43459407192A85 /* CMBannerView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/CMBannerView";
-			sourceTree = "<group>";
-		};
-		BCC33B6C0D9CE82CAA8704B1852489CD /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				147ED5FE2B04C057DD506568414C0C0D /* CMBannerView */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -202,11 +184,27 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C71A905B03F33B9D0661BE30A65CE498 /* CMBannerView */ = {
+			isa = PBXGroup;
+			children = (
+				7E5C854A21929859354570E9546C95A6 /* CMBannerCollectionFlowLayout.h */,
+				C0949AC66499AA70A6E57C8771A0F2C5 /* CMBannerCollectionFlowLayout.m */,
+				79B35BC0968E26B152E50FE94342988B /* CMBannerView.h */,
+				7D19AB30E425716165D4F77A99E7F6CC /* CMBannerView.m */,
+				7A643344629366B272BFCE10B78128F7 /* CMCollectionFlowLayouts.h */,
+				CC049199DA3ADF6ECF41FCD408BE449B /* CMCollectionFlowLayouts.m */,
+				B7F371548A34EB7A70F570DD09D80169 /* Pod */,
+				2585FC081F435272C6C5DD039FCC0753 /* Support Files */,
+			);
+			name = CMBannerView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				BCC33B6C0D9CE82CAA8704B1852489CD /* Development Pods */,
+				F821D9C32246F39E1997A47B66386F2B /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				76691207EC3CB2C06B9A754C66818472 /* Products */,
 				EDFEAB47F429A20A35A36B777829FEAF /* Targets Support Files */,
@@ -230,9 +228,28 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		F821D9C32246F39E1997A47B66386F2B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C71A905B03F33B9D0661BE30A65CE498 /* CMBannerView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		40BCC6775F1703D9F8D6BCE42235069F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7874289269BD7300137FC413C526C20 /* CMBannerCollectionFlowLayout.h in Headers */,
+				3678A45A539D1CE12D0D989B3343B492 /* CMBannerView-umbrella.h in Headers */,
+				59F77FBA07A813C1AAF7ADAE9F29A564 /* CMBannerView.h in Headers */,
+				8DCC5B12E97FFCCA559193743E25001B /* CMCollectionFlowLayouts.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		883356F7666CBC8AF5C76FA404AC05C4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,16 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42BD6F021EDFD99FF098FB3DB25C8BD /* Pods-CMBannerView_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4F7BE02C826B5002615BA0FAF2F750C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				178A269B56EA5CFF14AFB13334763396 /* CMBannerView-umbrella.h in Headers */,
-				20B82D23715BCB1DC91783320393930B /* CMBannerView.h in Headers */,
-				3A8879D60A7A14A752490F7CB585645E /* CMBannerCollectionFlowLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,12 +309,12 @@
 		};
 		A79434D66C30D9AA7BC3AE4BEB3A53FF /* CMBannerView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9EB488F14185C16383B094D4EE920938 /* Build configuration list for PBXNativeTarget "CMBannerView" */;
+			buildConfigurationList = F6908F7E74A4D8DDAAF8ED935E0E9B72 /* Build configuration list for PBXNativeTarget "CMBannerView" */;
 			buildPhases = (
-				D4F7BE02C826B5002615BA0FAF2F750C /* Headers */,
-				03B31DEF20465D8453D5C17C173A0EE5 /* Sources */,
-				6541BAFB5B3A1C88F26845519CC86471 /* Frameworks */,
-				DA061945BAA66E46F2DCC3B04521C796 /* Resources */,
+				40BCC6775F1703D9F8D6BCE42235069F /* Headers */,
+				D85E428E50DDB157D7E459695B4E4E8B /* Sources */,
+				61496239A6266453BCBA91B6EFDE86AA /* Frameworks */,
+				42091B9E8D2B6852ED9C3708B5C52E0D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -347,7 +354,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DA061945BAA66E46F2DCC3B04521C796 /* Resources */ = {
+		42091B9E8D2B6852ED9C3708B5C52E0D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,21 +378,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		03B31DEF20465D8453D5C17C173A0EE5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEC72A0359C76DC255134864DC8F47CF /* CMBannerView-dummy.m in Sources */,
-				0E2D8B2BE6C47DB4071ED255BF3F3262 /* CMBannerView.m in Sources */,
-				4E3CB1A976885F6EF664900EE9F2E808 /* CMBannerCollectionFlowLayout.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CE857CD4848C10F0324F7160A9770829 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F5E77E4CF00AB0889EE4ADA0B1AD6D30 /* Pods-CMBannerView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85E428E50DDB157D7E459695B4E4E8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD428DC620EFA655AFDC7D71CEDCEBB /* CMBannerCollectionFlowLayout.m in Sources */,
+				0EA428D1CE8D76E610098B50B6DB3314 /* CMBannerView-dummy.m in Sources */,
+				9B5B36210D5297F62B5EA1AA29BC1606 /* CMBannerView.m in Sources */,
+				F7F2BBE51477FE5FC9372CAF9A0C194E /* CMCollectionFlowLayouts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +523,38 @@
 			};
 			name = Debug;
 		};
+		3B66D6DFB49E89A31387B23BF1E44BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49A20CDB5A1246DA1A82DB5F95A8F10E /* CMBannerView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CMBannerView/CMBannerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CMBannerView/CMBannerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CMBannerView/CMBannerView.modulemap";
+				PRODUCT_MODULE_NAME = CMBannerView;
+				PRODUCT_NAME = CMBannerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		3BD3ACFF31353A3082A122B068E07C47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9941A102E681F6C83D82B2B83937B717 /* Pods-CMBannerView_Example.release.xcconfig */;
@@ -602,47 +642,16 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		7D3286DABC0DF523C13BA69AF8B2A95C /* Release */ = {
+		7B4244D779EB72A75103C3CC177CFFA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 447C131DA63A32850D15DC36EFF51553 /* CMBannerView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CMBannerView/CMBannerView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CMBannerView/CMBannerView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CMBannerView/CMBannerView.modulemap";
-				PRODUCT_MODULE_NAME = CMBannerView;
-				PRODUCT_NAME = CMBannerView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7EF4DBE976AE12221F93FBDF51ADBB9C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 447C131DA63A32850D15DC36EFF51553 /* CMBannerView.xcconfig */;
+			baseConfigurationReference = 49A20CDB5A1246DA1A82DB5F95A8F10E /* CMBannerView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -747,15 +756,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9EB488F14185C16383B094D4EE920938 /* Build configuration list for PBXNativeTarget "CMBannerView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7EF4DBE976AE12221F93FBDF51ADBB9C /* Debug */,
-				7D3286DABC0DF523C13BA69AF8B2A95C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		9F9A567CBF7C9CD395762B1AB02C0F96 /* Build configuration list for PBXNativeTarget "Pods-CMBannerView_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -770,6 +770,15 @@
 			buildConfigurations = (
 				23FA9134672D5B770F972F3ADDDFFA90 /* Debug */,
 				185305A1AEBDDD1EBF91E090D5237EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6908F7E74A4D8DDAAF8ED935E0E9B72 /* Build configuration list for PBXNativeTarget "CMBannerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4244D779EB72A75103C3CC177CFFA9 /* Debug */,
+				3B66D6DFB49E89A31387B23BF1E44BC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

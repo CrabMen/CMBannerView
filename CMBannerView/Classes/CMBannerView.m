@@ -21,6 +21,8 @@
 
 @property (nonatomic,strong) NSTimer *timer;
 
+@property (nonatomic,strong) NSIndexPath *currentIndex;
+
 
 @end
 
@@ -37,12 +39,6 @@
     return _timer;
 }
 
-- (CMBannerCollectionFlowLayout *)cm_layout {
-    if (!_cm_layout) {
-        _cm_layout = [CMBannerCollectionFlowLayout defaultLayout];
-    }
-    return _cm_layout;
-}
 
 - (UICollectionView *)collectionView {
     
@@ -74,6 +70,14 @@
     [self timer];
 }
 
+- (void)cm_setNeedsLayout {
+    
+    if (!self.cm_layout) return;
+    self.collectionView.collectionViewLayout =  self.cm_layout;
+    [self.collectionView.collectionViewLayout invalidateLayout];
+}
+
+
 - (void)timerInvalidate {
     if (!_timer) return;
     [_timer invalidate];
@@ -83,12 +87,17 @@
 - (void)timerAction {
     
    [self.collectionView setContentOffset:CGPointMake(self.collectionView.contentOffset.x + self.collectionView.bounds.size.width, 0) animated:YES];
+    
+    
+
 }
 
-- (void)cm_reloadConfig {
-    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    self.collectionView = nil;
-    [self layoutSubviews];
+- (void)cm_reloadLayout {
+//    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+//    self.collectionView = nil;
+//    [self layoutSubviews];
+
+    [self cm_setNeedsLayout];
 }
 
 - (void)validateConfig {
@@ -105,8 +114,6 @@
     [NSLayoutConstraint activateConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[collection]|" options:0 metrics:@{}views:@{@"collection":self.collectionView}]];
 
 }
-
-
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     
@@ -132,16 +139,40 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (self.delegate && [self.delegate respondsToSelector:@selector(sd_bannerView:didSelectIndex:)]) {
-        [self.delegate sd_bannerView:self didSelectIndex:indexPath.item % 200];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cm_bannerView:didSelectIndex:)]) {
+        [self.delegate cm_bannerView:self didSelectIndex:indexPath.item % 200];
+    }
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cm_bannerView:didClickIndex:)]) {
+        [self.delegate cm_bannerView:self didClickIndex:indexPath.item % 200];
     }
     
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     NSInteger index = (NSInteger)floor(scrollView.contentOffset.x / self.bounds.size.width) % 200;
-    NSLog(@"当前滚动到了第%ld个item",index);
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cm_bannerView:didScrollToIndex:)]) {
+        [self.delegate cm_bannerView:self didScrollToIndex:index];
+    }
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cm_bannerView:didSelectIndex:)]) {
+        [self.delegate cm_bannerView:self didSelectIndex:index];
+    }
+    
 }
+
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+    
+    NSInteger index = (NSInteger)floor(scrollView.contentOffset.x / self.bounds.size.width) % 200;
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cm_bannerView:didScrollToIndex:)]) {
+        [self.delegate cm_bannerView:self didScrollToIndex:index];
+    }
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cm_bannerView:didSelectIndex:)]) {
+        [self.delegate cm_bannerView:self didSelectIndex:index];
+    }
+}
+
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     

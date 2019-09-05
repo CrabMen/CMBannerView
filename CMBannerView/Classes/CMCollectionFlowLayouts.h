@@ -23,6 +23,11 @@ typedef NS_ENUM(NSInteger,CMLayoutsHorizontalContentMode) {
     CMLayoutsHorizontalContentMode_Right
 };
 
+typedef NS_ENUM(NSInteger,CMLayoutsScrollDirection) {
+    CMLayoutsScrollDirection_Left,
+    CMLayoutsScrollDirection_Right
+};
+
 
 @interface CMCollectionFlowLayouts : UICollectionViewFlowLayout
 
@@ -44,6 +49,10 @@ typedef NS_ENUM(NSInteger,CMLayoutsHorizontalContentMode) {
 
 
 
+@property (nonatomic,assign) CGFloat cm_scale;
+@property (nonatomic,assign) CGFloat cm_alpha;
+
+
 +(instancetype)layoutWithStyle:(CMCollectionFlowLayoutsStyle)style;
 +(instancetype) alloc __attribute__((unavailable("please call class method \"+ (instancetype)layoutWithStyle:(CMCollectionFlowLayoutsStyle)style\" instead")));
 +(instancetype) new __attribute__((unavailable("please call class method \"+ (instancetype)layoutWithStyle:(CMCollectionFlowLayoutsStyle)style\" instead")));
@@ -56,8 +65,6 @@ typedef NS_ENUM(NSInteger,CMLayoutsHorizontalContentMode) {
 
 @interface CMCollectionFlowLayouts_Angle : CMCollectionFlowLayouts
 
-@property (nonatomic,assign) CGFloat cm_angle;
-@property (nonatomic,assign) CGFloat cm_alpha;
 
 
 +(instancetype) alloc;
@@ -66,8 +73,6 @@ typedef NS_ENUM(NSInteger,CMLayoutsHorizontalContentMode) {
 
 @interface CMCollectionFlowLayouts_Scale : CMCollectionFlowLayouts
 
-@property (nonatomic,assign) CGFloat cm_scale;
-@property (nonatomic,assign) CGFloat cm_alpha;
 
 +(instancetype) alloc;
 

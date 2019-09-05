@@ -57,9 +57,6 @@
 
 @implementation CMCollectionFlowLayouts_Angle
 
-- (void)prepareLayout {
-    [super prepareLayout];
-}
 
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
     return YES;
@@ -99,14 +96,6 @@
 @implementation CMCollectionFlowLayouts_Scale
 
 
-- (void)prepareLayout {
-    [super prepareLayout];
-    CGFloat itemH = self.collectionView.bounds.size.height * 0.8;
-    CGFloat itemW = self.collectionView.bounds.size.height * 0.6;
-    CGFloat margin = (self.collectionView.bounds.size.width -  itemW) * 0.5;
-    self.itemSize = CGSizeMake(itemW, itemH);
-    self.sectionInset = UIEdgeInsetsMake(0, margin, 0, margin);
-}
 
 - (NSArray<UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
     NSArray *attrs = [super layoutAttributesForElementsInRect:rect];
@@ -114,7 +103,7 @@
     CGFloat screenCenterX = self.collectionView.contentOffset.x + self.collectionView.bounds.size.width * 0.5;
     for (UICollectionViewLayoutAttributes *attribute in itemAttrs) {
         CGFloat deltaCenterX = fabs(screenCenterX - attribute.center.x);
-        CGFloat scale = fabs(deltaCenterX/self.collectionView.bounds.size.width * 0.5 - 0.8) ;
+        CGFloat scale = fabs(deltaCenterX/self.collectionView.bounds.size.width * 0.5 - self.cm_scale) ;
         attribute.transform = CGAffineTransformMakeScale(scale, scale);
     }
     return itemAttrs;

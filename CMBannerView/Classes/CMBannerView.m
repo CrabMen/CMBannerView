@@ -56,6 +56,7 @@
         collectionView.showsVerticalScrollIndicator = NO;
         collectionView.backgroundColor = [UIColor clearColor];
         collectionView.pagingEnabled = YES;
+        self.currentIndex = [NSIndexPath indexPathForItem:-1 inSection:0];
         _collectionView = collectionView;
         [self addSubview:_collectionView];
     }
@@ -86,11 +87,23 @@
 
 - (void)timerAction {
     
-   [self.collectionView setContentOffset:CGPointMake(self.collectionView.contentOffset.x + self.collectionView.bounds.size.width, 0) animated:YES];
+    [self.collectionView setContentOffset:CGPointMake(self.collectionView.contentOffset.x + self.collectionView.bounds.size.width, 0) animated:YES];
     
-    
+    [self scrollToNearestWithDirection:CMLayoutsScrollDirection_Right animated:YES];
 
 }
+
+
+
+- (void)scrollToNearestWithDirection:(CMLayoutsScrollDirection)direction animated:(BOOL)animated {
+
+    NSInteger item = direction == CMLayoutsScrollDirection_Right ? self.currentIndex.item + 1 : self.currentIndex.item - 1;
+    NSInteger count = [self.collectionView numberOfItemsInSection:0];
+    if (item  < count - 1 && item >= 0 ) {
+        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:item inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    }
+}
+
 
 - (void)cm_reloadLayout {
 //    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
@@ -137,6 +150,12 @@
 }
 
 
+- (void)modifyCurrentIndexPathWithIndex:(NSInteger)index {
+    if (self.currentIndex.item == index) return;
+    self.currentIndex = [NSIndexPath indexPathForItem:index inSection:0];
+    NSLog(@"self.currentIndex被重新赋值为%ld",self.currentIndex.item);
+}
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
     if (self.delegate && [self.delegate respondsToSelector:@selector(cm_bannerView:didSelectIndex:)]) {
@@ -147,6 +166,7 @@
         [self.delegate cm_bannerView:self didClickIndex:indexPath.item % 200];
     }
     
+    [self modifyCurrentIndexPathWithIndex:indexPath.item];
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
@@ -160,17 +180,23 @@
         [self.delegate cm_bannerView:self didSelectIndex:index];
     }
     
+    [self modifyCurrentIndexPathWithIndex:(NSInteger)floor(scrollView.contentOffset.x / self.bounds.size.width)];
+
+    
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
     
     NSInteger index = (NSInteger)floor(scrollView.contentOffset.x / self.bounds.size.width) % 200;
+    if (self.currentIndex.item == (NSInteger)floor(scrollView.contentOffset.x / self.bounds.size.width)) return;
     if (self.delegate && [self.delegate respondsToSelector:@selector(cm_bannerView:didScrollToIndex:)]) {
         [self.delegate cm_bannerView:self didScrollToIndex:index];
     }
     if (self.delegate && [self.delegate respondsToSelector:@selector(cm_bannerView:didSelectIndex:)]) {
         [self.delegate cm_bannerView:self didSelectIndex:index];
     }
+    [self modifyCurrentIndexPathWithIndex:(NSInteger)floor(scrollView.contentOffset.x / self.bounds.size.width)];
+
 }
 
 

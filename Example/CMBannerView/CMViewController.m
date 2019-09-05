@@ -24,22 +24,18 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.banner = [[CMBannerView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 200)];
     self.banner.delegate = self;
-    self.layout = [CMCollectionFlowLayouts layoutWithStyle:CMCollectionFlowLayoutsStyle_Liner];
+    self.layout = [CMCollectionFlowLayouts layoutWithStyle:CMCollectionFlowLayoutsStyle_Scale];
     self.layout.cm_localImages = @[@"",@"",@"",@"",@"",@"",];
+    self.layout.itemSize = CGSizeMake(self.banner.bounds.size.width*0.8, self.banner.bounds.size.height*0.8);
+    self.layout.minimumInteritemSpacing = 0;
+    
     self.banner.cm_layout = self.layout;
+    
     
     [self.view addSubview:self.banner];
 
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-    self.layout.minimumInteritemSpacing += 5;
-    self.layout.minimumLineSpacing += 5;
-    [self.banner cm_reloadLayout];
-
-    
-}
 
 - (void)didReceiveMemoryWarning
 {

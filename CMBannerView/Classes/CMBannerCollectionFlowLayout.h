@@ -17,6 +17,8 @@ typedef NS_ENUM(NSInteger,CMBannerViewStyle) {
 };
 
 
+
+
 @interface CMBannerCollectionFlowLayout : UICollectionViewFlowLayout
 
 @property (nonatomic,strong) NSArray <NSString *>*cm_localImages;

@@ -20,9 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol CMBannerViewDataSource <NSObject>
 
-- (NSInteger)cm_numberOfSectionsInCollectionView:(UICollectionView *)collectionView;
-- (NSInteger)cm_collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section;
-- (UICollectionViewCell *)cm_collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
+- (NSInteger)cm_numberOfItemsInBannerView:(CMBannerView *)bannerView;
+- (UICollectionViewCell *)cm_bannerView:(CMBannerView *)bannerView cellForItemAtIndex:(NSInteger)index;
 
 @end
 
